@@ -1,20 +1,39 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Contract, BrowserProvider } from 'ethers';
+import { TicketModuleTicketMaster} from '../scdata/deploy_addresses.json'; // Update path as necessary
+import { abi } from '../scdata/Ticket.json'; // Update path as necessary
 
 function PurchaseForm({ event, onClose }) {
   const [formData, setFormData] = useState({ name: '', email: '' });
+  const [processing, setProcessing] = useState(false);
   const navigate = useNavigate();
+  const provider = new BrowserProvider(window.ethereum);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Close the form
-    onClose();
-    // Redirect to ticket confirmation page
-    navigate('/ticket-confirmation', { state: { ...formData, event } });
+    setProcessing(true);
+
+    try {
+      const signer = await provider.getSigner();
+      const contract = new Contract(TicketModuleTicketMaster, abi, signer);
+
+      // Call smart contract method to purchase ticket
+      const tx = await contract.purchaseTicket(event.id, formData.name, formData.email);
+      await tx.wait(); // Wait for transaction to be mined
+
+      console.log('Transaction Hash:', tx.hash);
+      onClose();
+      navigate('/ticket-confirmation', { state: { ...formData, event } });
+    } catch (error) {
+      console.error('Error purchasing ticket:', error);
+    } finally {
+      setProcessing(false);
+    }
   };
 
   return (
@@ -36,7 +55,9 @@ function PurchaseForm({ event, onClose }) {
             Email:
             <input type="email" name="email" onChange={handleChange} className="border p-2 w-full" required />
           </label>
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Confirm Purchase</button>
+          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded" disabled={processing}>
+            {processing ? 'Processing...' : 'Confirm Purchase'}
+          </button>
         </form>
       </div>
     </div>
