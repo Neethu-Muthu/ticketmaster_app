@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Contract, BrowserProvider } from 'ethers';
-import { TicketModuleTicketMaster} from '../scdata/deploy_addresses.json'; // Update path as necessary
+import { Contract, ethers } from 'ethers';
+import { TicketModuleTicketMaster } from '../scdata/deploy_addresses.json'; // Update path as necessary
 import { abi } from '../scdata/Ticket.json'; // Update path as necessary
 
 function PurchaseForm({ event, onClose }) {
   const [formData, setFormData] = useState({ name: '', email: '' });
   const [processing, setProcessing] = useState(false);
   const navigate = useNavigate();
-  const provider = new BrowserProvider(window.ethereum);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,20 +18,37 @@ function PurchaseForm({ event, onClose }) {
     setProcessing(true);
 
     try {
-      const signer = await provider.getSigner();
+      if (!window.ethereum) {
+        alert("MetaMask is not installed. Please install MetaMask to use this feature.");
+        return;
+      }
+
+      const provider = new ethers.BrowserProvider(window.ethereum);
+      const signer = provider.getSigner();
       const contract = new Contract(TicketModuleTicketMaster, abi, signer);
 
+      // Ensure MetaMask is connected
+      const accounts = await provider.listAccounts();
+      if (accounts.length === 0) {
+        await provider.send("eth_requestAccounts", []);
+      }
+
       // Call smart contract method to purchase ticket
-      const tx = await contract.purchaseTicket(event.id, formData.name, formData.email);
+      const tx = await contract.buyTicket(event.id, {
+        value: ethers.utils.parseEther("0.1") // Adjust value as needed
+      });
       await tx.wait(); // Wait for transaction to be mined
 
       console.log('Transaction Hash:', tx.hash);
-      onClose();
+
+      // Navigate to the confirmation page with the purchased ticket details
       navigate('/ticket-confirmation', { state: { ...formData, event } });
     } catch (error) {
-      console.error('Error purchasing ticket:', error);
+      console.error('Error purchasing ticket:', error.message);
+      alert(`Error purchasing ticket: ${error.message}`);
     } finally {
       setProcessing(false);
+      onClose();
     }
   };
 
