@@ -32,7 +32,7 @@ Before you get started, make sure you have the following:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/neethu-muthu/CertiLink-DApp.git
+   git clone https://github.com/neethu-muthu/ticketmaster_app.git
    cd UI
    
 2. Install dependencies
@@ -72,7 +72,7 @@ npx hardhat node
 open another terminal in vscode(ctrl+shift+`)
 
 ```
-npx hardhat ignition deploy ignition/modules/Cert.js
+npx hardhat ignition deploy ignition/modules/Ticket.js
 ``` 
 open another terminal in vscode(ctrl+shift+`)
 
@@ -89,7 +89,7 @@ Go to folder src/SCdata
 npm run dev
 ```
 - connect your metamask
-- issue certificate
+- issue ticket
 - enter details
 - make payment in metamask
 - after metamask confirm get you ticket 
