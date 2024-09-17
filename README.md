@@ -99,7 +99,9 @@ npm run dev
 Feel free to customize the events data in App.jsx to include your favorite events. Modify styles in tailwind.config.js to match your brand's theme.
 
 ## 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## 🙌 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your proposed changes.
