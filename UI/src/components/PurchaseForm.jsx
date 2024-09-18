@@ -1,83 +1,103 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Contract, ethers } from 'ethers';
-import { TicketModuleTicketMaster } from '../scdata/deploy_addresses.json'; // Update path as necessary
-import { abi } from '../scdata/Ticket.json'; // Update path as necessary
+import React, { useState } from "react";
+import { ethers } from "ethers";
+import SeatChart from "./SeatChart";
 
-function PurchaseForm({ event, onClose }) {
-  const [formData, setFormData] = useState({ name: '', email: '' });
-  const [processing, setProcessing] = useState(false);
-  const navigate = useNavigate();
+const PurchaseForm = ({ event, onClose }) => {
+  const [selectedSeats, setSelectedSeats] = useState([]);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSelectSeat = (seatId) => {
+    setSelectedSeats([...selectedSeats, seatId]);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setProcessing(true);
+  const handleBuyTickets = async () => {
+    if (!window.ethereum) {
+      alert("MetaMask is not installed!");
+      return;
+    }
 
     try {
-      if (!window.ethereum) {
-        alert("MetaMask is not installed. Please install MetaMask to use this feature.");
+      // Request account access if needed
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      const provider = new ethers.BrowserProvider(window.ethereum);
+      const signer = provider.getSigner();
+
+      // Replace with your deployed contract address and ABI
+      const contractAddress = "0xEA2766aCb7408707111549336e8199e12C5f1C0E";
+      const contractABI = [
+        {
+          inputs: [
+            {
+              internalType: "uint256",
+              name: "_ticketId",
+              type: "uint256",
+            },
+          ],
+          name: "buyTicket",
+          outputs: [],
+          stateMutability: "payable",
+          type: "function",
+        },
+        // Add other relevant ABI items
+      ];
+
+      const contract = new ethers.Contract(
+        contractAddress,
+        contractABI,
+        signer
+      );
+
+      // Ensure at least one seat is selected
+      if (selectedSeats.length === 0) {
+        alert("Please select at least one seat.");
         return;
       }
 
-      const provider = new ethers.BrowserProvider(window.ethereum);
-      const signer = provider.getSigner();
-      const contract = new Contract(TicketModuleTicketMaster, abi, signer);
+      // Get the ticket details to find the price
+      const ticketDetails = await contract.getTicket(event.id);
+      const ticketPrice = ethers.utils.formatEther(ticketDetails.price);
 
-      // Ensure MetaMask is connected
-      const accounts = await provider.listAccounts();
-      if (accounts.length === 0) {
-        await provider.send("eth_requestAccounts", []);
-      }
-
-      // Call smart contract method to purchase ticket
+      // Call the smart contract method to buy tickets
       const tx = await contract.buyTicket(event.id, {
-        value: ethers.utils.parseEther("0.1") // Adjust value as needed
+        value: ethers.utils.parseEther(ticketPrice.toString()),
       });
-      await tx.wait(); // Wait for transaction to be mined
 
-      console.log('Transaction Hash:', tx.hash);
+      await tx.wait();
 
-      // Navigate to the confirmation page with the purchased ticket details
-      navigate('/ticket-confirmation', { state: { ...formData, event } });
+      alert("Tickets purchased successfully!");
     } catch (error) {
-      console.error('Error purchasing ticket:', error.message);
-      alert(`Error purchasing ticket: ${error.message}`);
-    } finally {
-      setProcessing(false);
-      onClose();
+      console.error("Error buying tickets:", error);
+      alert("Failed to purchase tickets.");
     }
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="relative">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="bg-white p-6 rounded-lg shadow-lg">
+        <h2 className="text-2xl font-bold mb-4">
+          {event.name} - Purchase Ticket
+        </h2>
+
+        {/* Seat Chart */}
+        <h3 className="text-lg font-semibold mb-2">Select Your Seats</h3>
+        <SeatChart onSelectSeat={handleSelectSeat} />
+
+        {/* Buy Button */}
         <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
+          onClick={handleBuyTickets}
         >
-          &times;
+          Buy Tickets
         </button>
-        <form className="bg-white p-8 rounded" onSubmit={handleSubmit}>
-          <h2 className="text-xl font-bold mb-4">Purchase Ticket</h2>
-          <label className="block mb-2">
-            Name:
-            <input type="text" name="name" onChange={handleChange} className="border p-2 w-full" required />
-          </label>
-          <label className="block mb-4">
-            Email:
-            <input type="email" name="email" onChange={handleChange} className="border p-2 w-full" required />
-          </label>
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded" disabled={processing}>
-            {processing ? 'Processing...' : 'Confirm Purchase'}
-          </button>
-        </form>
+
+        <button
+          className="bg-red-500 text-white px-4 py-2 rounded mt-4"
+          onClick={onClose}
+        >
+          Close
+        </button>
       </div>
     </div>
   );
-}
+};
 
 export default PurchaseForm;
