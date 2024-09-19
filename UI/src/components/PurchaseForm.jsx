@@ -52,6 +52,8 @@ const PurchaseForm = ({ event, onClose }) => {
         return;
       }
 
+       console.log("Contract Methods:", Object.keys(contract.functions));
+
       // Get the ticket details to find the price
       const ticketDetails = await contract.getTicket(event.id);
       const ticketPrice = ethers.utils.formatEther(ticketDetails.price);
