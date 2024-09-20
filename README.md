@@ -27,17 +27,6 @@ Ensure you have the following installed:
 - 🔐 [MetaMask](https://metamask.io/)
 - 💰 Testnet Ethereum wallet with ETH
 
-## 📦 Getting Started
-
-### Prerequisites
-
-Before you get started, make sure you have the following:
-
-- 🖥 [Node.js](https://nodejs.org/)
-- 📦 [npm](https://www.npmjs.com/) (usually installed with Node.js)
-- 🔐 [Metamask](https://metamask.io/)
-- 💰 Ethereum wallet with testnet ETH
-
 ### Installation
 
 1. **Clone the repository**:
