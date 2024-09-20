@@ -1,5 +1,7 @@
 # 🎟️ TicketMaster App
 
+![TicketMaster App Image](Frontend/src/assets/images/Screenshot from 2024-09-21 01-47-35 (1).png)
+
 Welcome to the **TicketMaster App** – your ultimate ticketing experience for unforgettable events! With our app, you can easily browse upcoming concerts, purchase tickets, and receive instant confirmations.
 
 ## 🚀 Key Features
