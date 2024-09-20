@@ -4,8 +4,7 @@ import Home from "./components/Home"; // Import the Home component
 import AboutPage from "./components/AboutPage";
 import EventDetailsPage from "./components/EventDetailsPage";
 import Ticket from "./components/TicketPage";
-import LoginPage from "./components/LoginPage";
-import EventCreationPage from "./components/EventCreationPage";
+
 
 const App = () => {
   return (
@@ -15,8 +14,7 @@ const App = () => {
         <Route path="/home" element={<Home />} /> {/* Home page route */}
         <Route path="/event/:id" element={<EventDetailsPage />} />
         <Route path="/ticket" element={<Ticket />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/create-event" element={<EventCreationPage />} />
+       
       </Routes>
     </Router>
   );
