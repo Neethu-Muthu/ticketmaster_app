@@ -109,6 +109,7 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 📣 Stay Connected
 - GitHub: github.com/neethu-muthu/ticketmaster-app
 - LinkedIn: www.linkedin.com/in/neethumuthu
+
 Thank you for checking out the TicketMaster App. We hope you enjoy exploring and purchasing tickets for amazing events! 🎉
 
 Happy Browsing! 🥳
