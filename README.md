@@ -1,20 +1,31 @@
-# TicketMaster App
+# 🎟️ TicketMaster App
 
-Welcome to the **TicketMaster App** 🎫 – your gateway to unforgettable events! With our app, you can browse upcoming concerts, purchase tickets, and get instant confirmations. Built using React, Vite, and Tailwind CSS, it's designed to offer a seamless and visually appealing experience.
+Welcome to the **TicketMaster App** – your ultimate ticketing experience for unforgettable events! With our app, you can easily browse upcoming concerts, purchase tickets, and receive instant confirmations.
 
-## 🚀 Features
+## 🚀 Key Features
 
-- **Browse Events**: View a list of exciting events with details including date, venue, and availability.
-- **Responsive Design**: A sleek and modern interface that looks great on any device.
-- **MetaMask Integration**: Connect your MetaMask wallet to purchase tickets securely with Ethereum.
-- **Real-Time Purchase**: Buy tickets instantly and receive a confirmation of your purchase.
+- **Browse Events**: Discover exciting events with comprehensive details including date, venue, and ticket availability.
+- **Seamless Purchase**: Effortlessly buy tickets and receive real-time confirmations.
+- **MetaMask Integration**: Securely purchase tickets using Ethereum through MetaMask.
+- **Responsive Design**: Enjoy a beautiful interface on any device.
 
 ## 🛠️ Technologies Used
 
-- **React**: For building a dynamic user interface.
-- **Vite**: For fast and efficient development.
-- **Tailwind CSS**: For a beautiful and responsive design.
-- **Ethers.js**: For interacting with the Ethereum blockchain.
+- **React**: Dynamic UI for an engaging user experience.
+- **Vite**: Fast development and optimal performance.
+- **Tailwind CSS**: Stylish and responsive design.
+- **Ethers.js**: Smooth interaction with the Ethereum blockchain.
+
+## 📦 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- 🖥 [Node.js](https://nodejs.org/)
+- 📦 [npm](https://www.npmjs.com/) (comes with Node.js)
+- 🔐 [MetaMask](https://metamask.io/)
+- 💰 Testnet Ethereum wallet with ETH
 
 ## 📦 Getting Started
 
@@ -53,7 +64,7 @@ Add a main network to hardhat.config.
 eg.
 ```
 module.exports = {
-  defaultNetwork:"infurasepolia",
+  defaultNetwork:"alchemy",
   networks: {
     localhost: {
       url:"http://127.0.0.1:8545/"
