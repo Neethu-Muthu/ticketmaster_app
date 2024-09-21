@@ -49,11 +49,19 @@ npm i hardhat
 ```
 npm hardhat compile
 ```
-Add a main network to hardhat.config.
-- here im using sepolia and alchemy
-- add your api key for your sepolia from alchemy
-- add your metamask private key 
-eg.
+
+To deploy the TicketMaster contract on the Ethereum Sepolia testnet using Alchemy and MetaMask, follow these steps:
+
+1. **Add the Main Network to your Hardhat Configuration:**
+
+   In your `hardhat.config.js` file, you'll need to add the Sepolia network and configure Alchemy as your provider. Don't forget to include your MetaMask private key for transaction signing.
+
+2. **Configure Sepolia and Alchemy:**
+
+   - **Alchemy API Key**: Get your API key by creating a project on [Alchemy](https://www.alchemy.com/).
+   - **MetaMask Private Key**: Copy your MetaMask private key (never share this!).
+
+3. **Example Configuration**: Update your `hardhat.config.js` file like this:
 ```
 module.exports = {
   defaultNetwork:"alchemy",
