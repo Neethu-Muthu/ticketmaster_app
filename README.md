@@ -50,8 +50,8 @@ npm i hardhat
 npm hardhat compile
 ```
 Add a main network to hardhat.config.
-- here im using sepolia and infura 
-- add your api key for your sepolia from infura
+- here im using sepolia and alchemy
+- add your api key for your sepolia from alchemy
 - add your metamask private key 
 eg.
 ```
