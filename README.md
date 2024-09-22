@@ -24,16 +24,17 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ## 🛠️ **Technologies Used**
 
-| Technology        |                                           |
+| Technology        | Icon                                      |
 |-------------------|-------------------------------------------|
 | **Solidity**      | ![Solidity](https://cdn-icons-png.flaticon.com/512/888/888879.png) |
 | **React**         | ![React](https://cdn-icons-png.flaticon.com/512/2160/2160034.png) |
 | **Vite**          | ![Vite](https://vitejs.dev/logo.svg)         |
-| **Tailwind CSS**  | ![Tailwind CSS](https://tailwindcss.com/favicon.ico) |
+| **Tailwind CSS**  | ![Tailwind CSS](https://upload.wikimedia.org/wikipedia/commons/6/6f/Tailwind_CSS_Logo.svg) |
 | **Ethers.js**     | ![Ethers.js](https://raw.githubusercontent.com/ethers-io/ethers.js/master/packages/ethers-logo.png) |
 | **Hardhat**       | ![Hardhat](https://hardhat.org/logo.png)     |
 | **MetaMask**      | ![MetaMask](https://metamask.io/images/mm-logo.png)   |
 | **Node.js & npm** | ![Node.js](https://nodejs.org/static/images/logo.svg)       |
+
 
 
 
