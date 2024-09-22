@@ -26,20 +26,21 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ### 🌐 Core Technologies
 
-| Technology        | Description                                      | Icon                                      |
-|-------------------|--------------------------------------------------|-------------------------------------------|
-| **Solidity**      | Smart contract development for Ethereum.         | ![Solidity](https://cdn-icons-png.flaticon.com/512/888/888879.png) |
-| **React**         | Build dynamic user interfaces.                    | ![React](https://cdn-icons-png.flaticon.com/512/2160/2160034.png) |
-| **Vite**          | Modern build tool for faster development.        | ![Vite](https://vitejs.dev/logo.svg)         |
-| **Tailwind CSS**  | Utility-first CSS framework for styling.         | ![Tailwind CSS](https://upload.wikimedia.org/wikipedia/commons/6/6f/Tailwind_CSS_Logo.svg) |
-| **Ethers.js**     | Interact with Ethereum blockchain easily.       | ![Ethers.js](https://raw.githubusercontent.com/ethers-io/ethers.js/master/packages/ethers-logo.png) |
-| **Hardhat**       | Development environment for Ethereum.            | ![Hardhat](https://hardhat.org/logo.png)     |
-| **MetaMask**      | Secure Ethereum wallet for transactions.         | ![MetaMask](https://metamask.io/images/mm-logo.png)   |
-| **Node.js & npm** | Backend tools for managing dependencies.         | ![Node.js](https://nodejs.org/static/images/logo.svg)       |
+| Technology        | Description                                      |
+|-------------------|--------------------------------------------------|
+| **Solidity**      | Smart contract development for Ethereum.         |
+| **React**         | Build dynamic user interfaces.                    |
+| **Vite**          | Modern build tool for faster development.        |
+| **Tailwind CSS**  | Utility-first CSS framework for styling.         |
+| **Ethers.js**     | Interact with the Ethereum blockchain easily.   |
+| **Hardhat**       | Development environment for Ethereum.            |
+| **MetaMask**      | Secure Ethereum wallet for transactions.         |
+| **Node.js & npm** | Backend tools for managing dependencies.         |
 
 ### 🛠️ **Additional Tools**
 - **Git**: Version control for tracking changes.
 - **Postman**: API testing and development tool.
+
 
 
 
