@@ -15,7 +15,7 @@ Welcome to the **TicketMaster App** – your ultimate ticketing experience for u
  ## 🎥 Demo Video
 
 Check out the demo video of the **TicketMaster App** in action:  
-[![Watch the video](https://www.example.com/path/to/your-uploaded-concert-image.jpg)](https://drive.google.com/file/d/1hRI6GlXa_v1beCy8y_v2ttUa8GiVhepd/view?usp=sharing)
+[![Watch the video](Frontend/src/assets/images/DALL·E 2024-09-22 22.58.52 - A vibrant concert scene with a large crowd enjoying a live performance. The stage is lit with colorful spotlights, and the audience is cheering with h.webp)](https://drive.google.com/file/d/1hRI6GlXa_v1beCy8y_v2ttUa8GiVhepd/view?usp=sharing)
 
 > _Click the image to watch the full demo on Google Drive._
 
