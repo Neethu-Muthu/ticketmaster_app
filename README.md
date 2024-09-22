@@ -1,7 +1,5 @@
 # 🎟️ **TicketMaster App**
 
-![Concert Banner](Frontend/src/assets/images/concert-thumbnail.webp)
-
 Welcome to the **TicketMaster App** – your ultimate ticketing experience for unforgettable events! With our app, you can easily browse upcoming concerts, purchase tickets, and receive instant confirmations.
 
 ---
@@ -24,13 +22,25 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ---
 
-## 🛠️ Technologies Used
+## ✨ **Features**
+- **View Events**: Explore a list of available events with detailed information.
+- **Buy Tickets**: Securely purchase tickets for concerts and other events.
+- **Manage Transactions**: Keep track of your purchased tickets and transaction history.
+- **Responsive Design**: Enjoy a seamless experience on both desktop and mobile devices.
 
-- ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat) **React**: Dynamic UI for an engaging user experience.
-- ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=flat) **Vite**: Fast development and optimal performance.
-- ![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat) **Tailwind CSS**: Stylish and responsive design.
-- ![Ethers.js](https://img.shields.io/badge/-Ethers.js-3C3C3D?logo=ethereum&logoColor=white&style=flat) **Ethers.js**: Smooth interaction with the Ethereum blockchain.
+---
 
+## 🛠️ **Technologies Used**
+| Technology  | Icon |
+|-------------|------|
+| **Solidity** | ![Solidity Icon](https://img.icons8.com/ios-filled/50/000000/solidity.png) |
+| **React** | ![React Icon](https://img.icons8.com/ios-filled/50/000000/react-native.png) |
+| **Vite** | ![Vite Icon](https://img.icons8.com/ios-filled/50/000000/vite.png) |
+| **Tailwind CSS** | ![Tailwind CSS Icon](https://img.icons8.com/ios-filled/50/000000/tailwind-css.png) |
+| **Ethers.js** | ![Ethers.js Icon](https://img.icons8.com/ios-filled/50/000000/ethers.png) |
+| **Hardhat** | ![Hardhat Icon](https://img.icons8.com/ios-filled/50/000000/hardhat.png) |
+| **MetaMask** | ![MetaMask Icon](https://img.icons8.com/ios-filled/50/000000/metamask.png) |
+| **Node.js & npm** | ![Node.js Icon](https://img.icons8.com/ios-filled/50/000000/nodejs.png) |
 ---
 
 ## 📦 Getting Started
