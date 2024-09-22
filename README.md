@@ -17,7 +17,7 @@ Welcome to the **TicketMaster App** – your ultimate ticketing experience for u
 
 Check out the demo video of the **TicketMaster App** in action:  
 <a href="https://drive.google.com/file/d/1hRI6GlXa_v1beCy8y_v2ttUa8GiVhepd/view?usp=sharing">
-    <img src="Frontend/src/assets/images/concert-thumbnail.webp" alt="Watch the video" width="300" />
+    <img src="Frontend/src/assets/images/concert-thumbnail.webp" alt="Watch the video" width="600" />
 </a>
 
 
