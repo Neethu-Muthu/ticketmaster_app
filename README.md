@@ -22,25 +22,19 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ---
 
-## ✨ **Features**
-- **View Events**: Explore a list of available events with detailed information.
-- **Buy Tickets**: Securely purchase tickets for concerts and other events.
-- **Manage Transactions**: Keep track of your purchased tickets and transaction history.
-- **Responsive Design**: Enjoy a seamless experience on both desktop and mobile devices.
-
----
-
 ## 🛠️ **Technologies Used**
-| Technology  | Icon |
-|-------------|------|
-| **Solidity** | ![Solidity Icon](https://img.icons8.com/ios-filled/50/000000/solidity.png) |
-| **React** | ![React Icon](https://img.icons8.com/ios-filled/50/000000/react-native.png) |
-| **Vite** | ![Vite Icon](https://img.icons8.com/ios-filled/50/000000/vite.png) |
-| **Tailwind CSS** | ![Tailwind CSS Icon](https://img.icons8.com/ios-filled/50/000000/tailwind-css.png) |
-| **Ethers.js** | ![Ethers.js Icon](https://img.icons8.com/ios-filled/50/000000/ethers.png) |
-| **Hardhat** | ![Hardhat Icon](https://img.icons8.com/ios-filled/50/000000/hardhat.png) |
-| **MetaMask** | ![MetaMask Icon](https://img.icons8.com/ios-filled/50/000000/metamask.png) |
-| **Node.js & npm** | ![Node.js Icon](https://img.icons8.com/ios-filled/50/000000/nodejs.png) |
+
+| Technology        | Description                                      |
+|-------------------|--------------------------------------------------|
+| **Solidity**      | Smart contract development for the Ethereum blockchain. |
+| **React**         | Dynamic user interface for building interactive web apps. |
+| **Vite**          | Fast and modern build tool for development and production. |
+| **Tailwind CSS**  | Utility-first CSS framework for creating responsive, modern designs. |
+| **Ethers.js**     | Library for interacting with the Ethereum blockchain and smart contracts. |
+| **Hardhat**       | Ethereum development environment for compiling and deploying smart contracts. |
+| **MetaMask**      | Ethereum wallet for secure blockchain transactions. |
+| **Node.js & npm** | Backend and package management tools for handling dependencies. |
+
 ---
 
 ## 📦 Getting Started
