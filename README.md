@@ -22,18 +22,17 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ---
 
-## 🛠️ **Technologies Used**
+| Technology        | Icon                                    |
+|-------------------|-----------------------------------------|
+| **Solidity**      | ![Solidity](https://example.com/solidity-icon.png) |
+| **React**         | ![React](https://example.com/react-icon.png)       |
+| **Vite**          | ![Vite](https://example.com/vite-icon.png)         |
+| **Tailwind CSS**  | ![Tailwind CSS](https://example.com/tailwind-icon.png) |
+| **Ethers.js**     | ![Ethers.js](https://example.com/ethers-icon.png)   |
+| **Hardhat**       | ![Hardhat](https://example.com/hardhat-icon.png)     |
+| **MetaMask**      | ![MetaMask](https://example.com/metamask-icon.png)   |
+| **Node.js & npm** | ![Node.js](https://example.com/nodejs-icon.png)       |
 
-| Technology        | Description                                      |
-|-------------------|--------------------------------------------------|
-| **Solidity**      | Smart contract development for the Ethereum blockchain. |
-| **React**         | Dynamic user interface for building interactive web apps. |
-| **Vite**          | Fast and modern build tool for development and production. |
-| **Tailwind CSS**  | Utility-first CSS framework for creating responsive, modern designs. |
-| **Ethers.js**     | Library for interacting with the Ethereum blockchain and smart contracts. |
-| **Hardhat**       | Ethereum development environment for compiling and deploying smart contracts. |
-| **MetaMask**      | Ethereum wallet for secure blockchain transactions. |
-| **Node.js & npm** | Backend and package management tools for handling dependencies. |
 
 ---
 
