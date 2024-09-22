@@ -22,16 +22,19 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ---
 
-| Technology        | Icon                                    |
-|-------------------|-----------------------------------------|
-| **Solidity**      | ![Solidity](https://example.com/solidity-icon.png) |
-| **React**         | ![React](https://example.com/react-icon.png)       |
-| **Vite**          | ![Vite](https://example.com/vite-icon.png)         |
-| **Tailwind CSS**  | ![Tailwind CSS](https://example.com/tailwind-icon.png) |
-| **Ethers.js**     | ![Ethers.js](https://example.com/ethers-icon.png)   |
-| **Hardhat**       | ![Hardhat](https://example.com/hardhat-icon.png)     |
-| **MetaMask**      | ![MetaMask](https://example.com/metamask-icon.png)   |
-| **Node.js & npm** | ![Node.js](https://example.com/nodejs-icon.png)       |
+## 🛠️ **Technologies Used**
+
+| Technology        | Icon                                      |
+|-------------------|-------------------------------------------|
+| **Solidity**      | ![Solidity](https://img.icons8.com/ios-filled/50/000000/solidity.png) |
+| **React**         | ![React](https://img.icons8.com/ios-filled/50/000000/react-native.png) |
+| **Vite**          | ![Vite](https://img.icons8.com/ios-filled/50/000000/vite.png)         |
+| **Tailwind CSS**  | ![Tailwind CSS](https://img.icons8.com/ios-filled/50/000000/tailwind-css.png) |
+| **Ethers.js**     | ![Ethers.js](https://img.icons8.com/ios-filled/50/000000/ethers.png)   |
+| **Hardhat**       | ![Hardhat](https://img.icons8.com/ios-filled/50/000000/hardhat.png)     |
+| **MetaMask**      | ![MetaMask](https://img.icons8.com/ios-filled/50/000000/metamask.png)   |
+| **Node.js & npm** | ![Node.js](https://img.icons8.com/ios-filled/50/000000/nodejs.png)       |
+
 
 
 ---
