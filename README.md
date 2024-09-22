@@ -12,6 +12,14 @@ Welcome to the **TicketMaster App** – your ultimate ticketing experience for u
 - **MetaMask Integration**: Securely purchase tickets using Ethereum through MetaMask.
 - **Responsive Design**: Enjoy a beautiful interface on any device.
 
+  ## 🎥 Demo Video
+
+Check out the demo video of the **TicketMaster App** in action:  
+[![Watch the video](https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg)](https://drive.google.com/file/d/1hRI6GlXa_v1beCy8y_v2ttUa8GiVhepd/view?usp=sharing)
+
+> _Click the image to watch the full demo on Google Drive._
+
+
 ## 🛠️ Technologies Used
 
 - **React**: Dynamic UI for an engaging user experience.
