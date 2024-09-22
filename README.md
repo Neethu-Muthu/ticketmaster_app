@@ -24,16 +24,17 @@ Check out the demo video of the **TicketMaster App** in action:
 
 ## 🛠️ **Technologies Used**
 
-| Technology        | Icon                                      |
+| Technology        |                                           |
 |-------------------|-------------------------------------------|
-| **Solidity**      | ![Solidity](https://img.icons8.com/ios-filled/50/000000/solidity.png) |
-| **React**         | ![React](https://img.icons8.com/ios-filled/50/000000/react-native.png) |
-| **Vite**          | ![Vite](https://img.icons8.com/ios-filled/50/000000/vite.png)         |
-| **Tailwind CSS**  | ![Tailwind CSS](https://img.icons8.com/ios-filled/50/000000/tailwind-css.png) |
-| **Ethers.js**     | ![Ethers.js](https://img.icons8.com/ios-filled/50/000000/ethers.png)   |
-| **Hardhat**       | ![Hardhat](https://img.icons8.com/ios-filled/50/000000/hardhat.png)     |
-| **MetaMask**      | ![MetaMask](https://img.icons8.com/ios-filled/50/000000/metamask.png)   |
-| **Node.js & npm** | ![Node.js](https://img.icons8.com/ios-filled/50/000000/nodejs.png)       |
+| **Solidity**      | ![Solidity](https://cdn-icons-png.flaticon.com/512/888/888879.png) |
+| **React**         | ![React](https://cdn-icons-png.flaticon.com/512/2160/2160034.png) |
+| **Vite**          | ![Vite](https://vitejs.dev/logo.svg)         |
+| **Tailwind CSS**  | ![Tailwind CSS](https://tailwindcss.com/favicon.ico) |
+| **Ethers.js**     | ![Ethers.js](https://raw.githubusercontent.com/ethers-io/ethers.js/master/packages/ethers-logo.png) |
+| **Hardhat**       | ![Hardhat](https://hardhat.org/logo.png)     |
+| **MetaMask**      | ![MetaMask](https://metamask.io/images/mm-logo.png)   |
+| **Node.js & npm** | ![Node.js](https://nodejs.org/static/images/logo.svg)       |
+
 
 
 
