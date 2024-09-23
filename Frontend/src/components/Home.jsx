@@ -38,9 +38,9 @@ const Home = () => {
     >
       <header className="flex justify-between items-center w-full p-24 bg-blue-900 text-white bg-opacity-75">
         <h1 className="text-2xl font-bold">TicketMaster</h1>
-        <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
+{/*         <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
           Connect Wallet
-        </button>
+        </button> */}
       </header>
 
       <section className="text-center my-10 bg-white bg-opacity-90 p-6 rounded-lg shadow-lg">
