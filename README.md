@@ -62,7 +62,7 @@ Make sure you have the following installed:
 - 🖥️ [Node.js](https://nodejs.org/)
 - 📦 [npm](https://www.npmjs.com/) (comes with Node.js)
 - 🔐 [MetaMask](https://metamask.io/)
-- 💰 Testnet Ethereum wallet with ETH
+- 💰 Hardhat
 
 ### **Installation**
 
