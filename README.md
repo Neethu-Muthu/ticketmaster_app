@@ -128,14 +128,14 @@ npm i
 ```
 Go to folder src/SCdata
 
-- add Abi code to cert.json file
+- add Abi code to ticket.json file
 - add deployed address to deployedaddress.json(deployed address will get after deploying the contract)
   
 ```
 npm run dev
 ```
 - connect your metamask
-- issue ticket
+- buy ticket
 - enter details
 - make payment in metamask
 - after metamask confirm get you ticket 
@@ -163,7 +163,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Contributions are welcome! Please fork the repository and submit a pull request with your proposed changes.
 
 📣 Stay Connected
-- GitHub: github.com/neethu-muthu/ticketmaster-app
+- GitHub: https://github.com/Neethu-Muthu
 - LinkedIn: www.linkedin.com/in/neethumuthu
 
 Thank you for checking out the TicketMaster App. We hope you enjoy exploring and purchasing tickets for amazing events! 🎉
