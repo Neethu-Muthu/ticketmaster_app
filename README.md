@@ -11,6 +11,9 @@ Welcome to the **TicketMaster App** – your ultimate ticketing experience for u
 - 🔐 **MetaMask Integration**: Securely purchase tickets using Ethereum through MetaMask.
 - 📱 **Responsive Design**: Enjoy a beautiful interface on any device.
 
+### 🎟️ Upcoming Features
+- **🎨 NFT Ticketing**: Currently working on creating tickets as NFTs to enhance ownership verification and transferability for users.
+
 ---
 
 ## 🎥 Demo Video
