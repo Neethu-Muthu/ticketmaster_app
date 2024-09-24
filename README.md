@@ -48,12 +48,6 @@ Check out the demo video of the **TicketMaster App** in action:
 - **Postman**: API testing and development tool.
 
 
-
-
-
-
-
-
 ---
 
 ## 📦 Getting Started
@@ -107,7 +101,7 @@ module.exports = {
     localhost: {
       url:"http://127.0.0.1:8545/"
     },
-    infurasepolia: {
+    alchemy: {
       url :"your api key of infura or any other accounts",
       accounts:["your metamask private key"]
     }
