@@ -123,7 +123,7 @@ npx hardhat ignition deploy ignition/modules/Ticket.js
 open another terminal in vscode(ctrl+shift+`)
 
 ```
-cd ui
+cd Frontend
 npm i 
 ```
 Go to folder src/SCdata
