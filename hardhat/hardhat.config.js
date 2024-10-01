@@ -9,7 +9,7 @@ module.exports = {
     alchemy: {
       url: "https://eth-sepolia.g.alchemy.com/v2/UwdzyRq4IfUKuhJr0H6Zv-ZEaWkULdPd",
       accounts: [
-        "b3324767a0712ab7158d4e1826c0d2e0a004d6b5c88c0a079f8d1d8893b0636e",
+        "private_key",
       ],
     },
   },
